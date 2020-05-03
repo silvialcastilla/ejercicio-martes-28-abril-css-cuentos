@@ -1,0 +1,130 @@
+main {
+    height: 98vh;
+    width: 100%;
+    background-image: url(../assets/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+@keyframes moving-good {
+    0% {
+        transform: translate(20px, 50px);
+    }
+    25% {
+        transform: translate(30px, 50px);
+    }
+    50% {
+        transform: translate(40px, 50px);
+    }
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+.prince {
+    transform: translate(20px, 50px);
+    animation: moving-good 7s;
+}
+
+.princess {
+    transform: translate(20px, 50px);
+    animation: moving-good 7s;
+}
+
+.fairy {
+    transform: translate(20px, 50px);
+    animation: moving-good 7s;
+}
+
+.frog {
+    transform: translate(20px, 50px);
+    animation: moving-good 7s;
+}
+
+@keyframes rotate-object {
+    0% {
+        display: block;
+        transform: rotate(-45deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+.castle {
+    position: absolute;
+    top: 250px;
+    left: 30%;
+    animation: rotate-object 10s;
+}
+
+.lamp {
+    position: absolute;
+    top: 250px;
+    left: 40%;
+    animation: rotate-object 10s;
+}
+
+.sword {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    animation: rotate-object 10s;
+}
+
+.apple-tomato {
+    position: absolute;
+    top: 250px;
+    left: 65%;
+    animation: rotate-object 10s;
+}
+
+.witch {
+    position: absolute;
+    top: 60px;
+    left: 60%;
+    transition: transform 5s;
+}
+
+.witch:hover {
+    transform: skew(20, 10);
+    transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+}
+
+.drake {
+    position: absolute;
+    top: 60px;
+    left: 70%;
+    transition: transform 5s;
+}
+
+.drake:hover {
+    transform: scale(0.7)
+}
+
+.gnome {
+    position: absolute;
+    top: 60px;
+    left: 80%;
+    transition: transform 5s;
+}
+
+.gnome:hover {
+    transform: rotate(360deg)
+}
